@@ -30,3 +30,26 @@ First Three Records
 |4f87d114-f522-4ead-93e3-f336402df6aa	|4/5/2024	|right	|Thomas-Thompson|	1010.34|	64	|2378.82	|55	|Female| East Linda|	Credit Card|
 |6750b7d6-dcc5-48c5-a76a-b6fc9d540fe1	|2/13/2024	|summer	|Sanchez-Williams|	400.8|	95|	31322.56|	57	|Male	|East Angelicastad|	Online|
 
+## Query Language (SQL) 
+Some of the query languages to retrieve records are displayed here 
+
+```SQL
+---1.CATEGORIZE THE DATA INOT GOLD,SILVER AND DIAMOND
+SELECT *,
+CASE
+WHEN PRICE < 500 THEN 'silver'
+WHEN PRICE BETWEEN 500 AND 999 THEN 'gold'
+ELSE 'diamond'
+END AS category
+FROM mobile_sales;
+
+---2.RETRIEVE ALL FEMALE CUSTOMERS THAT BOUGHT GOODS ABOVE 900---
+SELECT * FROM mobile_sales
+WHERE customergender = 'female'
+AND price >900;
+
+---3.RETRIEVE THE SALES BY PAYMENT METHOD ARRANGING FROM LARGEST TO SMALLEST AMOUNT---
+SELECT * FROM mobile_sales
+ORDER BY paymentMethod;
+```
+
