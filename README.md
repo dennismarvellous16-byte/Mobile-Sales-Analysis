@@ -51,5 +51,15 @@ AND price >900;
 ---3.RETRIEVE THE SALES BY PAYMENT METHOD ARRANGING FROM LARGEST TO SMALLEST AMOUNT---
 SELECT * FROM mobile_sales
 ORDER BY paymentMethod;
+
 ```
+
+## Visualization
+### Pivot Table 
+
+
+
+
+
+
 
