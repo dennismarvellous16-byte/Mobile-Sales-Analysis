@@ -20,3 +20,6 @@ www.Kaggle.com/dataset
 + Pivot Table / Charts 
 + PowerBI
 + SQL
+
+## Table Outlay:
+First Three Records 
